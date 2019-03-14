@@ -56,7 +56,7 @@ function addTodo(event) {
     todos.push(add);
     console.log(todos);
     // Update our html.
-
+    updateTodosOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -70,7 +70,7 @@ function removeTodo(event) {
     // Remove todo at that index.
 
     // Update our html.
-
+    updateTodosOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -84,7 +84,7 @@ function completeTodo(event) {
     // Move todo at that index to the completed list.
 
     // Update our html.
-
+    updateTodosOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -96,6 +96,7 @@ function clearTodos(event) {
     // Clear all todos from the list.
 
     // Update our html.
+    updateTodosOl();
 }
 
 function removeCompleted(event) {
@@ -107,7 +108,7 @@ function removeCompleted(event) {
     // Remove todo at that index.
 
     // Update our html.
-
+    updateTodosOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -121,7 +122,7 @@ function markUncomplete(event) {
     // Move todo at that index to the completed list.
 
     // Update our html.
-
+    updateTodosOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -133,6 +134,7 @@ function clearComplete(event) {
     // Clear all todos from the list.
 
     // Update our html.
+    updateTodosOl();
 }
 
 
