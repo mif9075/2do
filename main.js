@@ -51,7 +51,7 @@ function addTodo(event) {
     event.preventDefault();
 
     // Grab value of todo input box.
-
+    let add = document.querySelector('#new-todo').value;
     // Put that value at the end of our list.
 
     // Update our html.
@@ -64,7 +64,7 @@ function removeTodo(event) {
     event.preventDefault();
 
     // Grab value that's in user's removal index input box.
-
+    let remove = document.querySelector('#todo-removal-index').value;
     // Remove todo at that index.
 
     // Update our html.
@@ -77,7 +77,7 @@ function completeTodo(event) {
     event.preventDefault();
 
     // Grab value that's in user's todo completion index input box.
-
+    let compTodo = document.querySelector('#todo-complete-index').value;
     // Move todo at that index to the completed list.
 
     // Update our html.
@@ -99,7 +99,7 @@ function removeCompleted(event) {
     event.preventDefault();
 
     // Grab value that's in user's removal index input box.
-
+    let removeComp = document.querySelector('#completed-removal-index').value;
     // Remove todo at that index.
 
     // Update our html.
@@ -112,7 +112,7 @@ function markUncomplete(event) {
     event.preventDefault();
 
     // Grab value that's in user's todo completion index input box.
-
+    let markUnc = document.querySelector('#mark-uncomplete-index').value;
     // Move todo at that index to the completed list.
 
     // Update our html.
