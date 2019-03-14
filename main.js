@@ -84,10 +84,13 @@ function completeTodo(event) {
     // Grab value that's in user's todo completion index input box.
     let compTodo = document.querySelector('#todo-complete-index').value;
     // Move todo at that index to the completed list.
-    // let todo = todos.splice(compTodo, 1);
-    // completed = completed + todo;
+    completed = completed.concat(todos.splice(compTodo, 1));
+    // console.log(todos);
+    // console.log(completed);
+
     // Update our html.
     updateTodosOl();
+    updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -113,6 +116,7 @@ function removeCompleted(event) {
 
     // Update our html.
     updateTodosOl();
+    updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -127,6 +131,7 @@ function markUncomplete(event) {
 
     // Update our html.
     updateTodosOl();
+    updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
 }
@@ -139,6 +144,7 @@ function clearComplete(event) {
     
     // Update our html.
     updateTodosOl();
+    updateCompletedOl();
 }
 
 
