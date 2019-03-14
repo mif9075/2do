@@ -5,7 +5,7 @@
 */
 
 // An array for our todos.
-const todos = [];
+let todos = [];
 // An array for our completed todos.
 let completed = [];
 
@@ -97,9 +97,10 @@ function clearTodos(event) {
     event.preventDefault();
 
     // Clear all todos from the list.
-
+    todos = [];
     // Update our html.
     updateTodosOl();
+    console.log(todos);
 }
 
 function removeCompleted(event) {
@@ -135,7 +136,7 @@ function clearComplete(event) {
     event.preventDefault();
 
     // Clear all todos from the list.
-
+    
     // Update our html.
     updateTodosOl();
 }
