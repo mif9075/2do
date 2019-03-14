@@ -53,10 +53,12 @@ function addTodo(event) {
     // Grab value of todo input box.
     let add = document.querySelector('#new-todo').value;
     // Put that value at the end of our list.
-
+    todos.push(add);
+    console.log(todos);
     // Update our html.
 
     // Reset all input fields.
+    resetAllInputs();
 }
 
 function removeTodo(event) {
@@ -70,6 +72,7 @@ function removeTodo(event) {
     // Update our html.
 
     // Reset all input fields.
+    resetAllInputs();
 }
 
 function completeTodo(event) {
@@ -83,6 +86,7 @@ function completeTodo(event) {
     // Update our html.
 
     // Reset all input fields.
+    resetAllInputs();
 }
 
 function clearTodos(event) {
@@ -105,6 +109,7 @@ function removeCompleted(event) {
     // Update our html.
 
     // Reset all input fields.
+    resetAllInputs();
 }
 
 function markUncomplete(event) {
@@ -118,6 +123,7 @@ function markUncomplete(event) {
     // Update our html.
 
     // Reset all input fields.
+    resetAllInputs();
 }
 
 function clearComplete(event) {
