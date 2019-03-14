@@ -113,7 +113,7 @@ function removeCompleted(event) {
     // Grab value that's in user's removal index input box.
     let removeComp = document.querySelector('#completed-removal-index').value;
     // Remove todo at that index.
-
+    completed.splice(removeComp, 1);
     // Update our html.
     updateTodosOl();
     updateCompletedOl();
