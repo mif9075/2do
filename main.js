@@ -4,7 +4,6 @@
 # ========================================================
 */
 
-
 // An array for our todos.
 const todos = [];
 // An array for our completed todos.
@@ -17,25 +16,25 @@ function init() {
     // Add event listener functions that get called whenever a user interacts
     // with the respective element.
 
-    document.querySelector('')
+    document.querySelector('#add-todo')
         .addEventListener('click', addTodo);
     
-    document.querySelector('')
+    document.querySelector('#remove-todo')
         .addEventListener('click', removeTodo);
 
-    document.querySelector('')
+    document.querySelector('#complete-todo')
         .addEventListener('click', completeTodo);
 
-    document.querySelector('')
+    document.querySelector('#clear-todos-button')
         .addEventListener('click', clearTodos);
 
-    document.querySelector('')
+    document.querySelector('#remove-completed')
         .addEventListener('click', removeCompleted);
 
-    document.querySelector('')
+    document.querySelector('#mark-uncomplete')
         .addEventListener('click', markUncomplete);
 
-    document.querySelector('')
+    document.querySelector('#clear-completed-button')
         .addEventListener('click', clearComplete);
 }
 

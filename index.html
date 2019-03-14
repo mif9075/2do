@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,49 +10,56 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
+
 <body>
     <section id="container">
+
         <section id="todo-container">
             <form id="todos-form">
                 <section id="add-todo">
                     <input id="new-todo" type="text">
                     <button id="add-todo-button">Add to MyToDo List</button>
                 </section>
+
                 <section id="remove-todo">
                     <input id="todo-removal-index" type="text">
                     <button id="remove-todo-button">Remove from MyToDo List</button>
                 </section>
+
                 <section id="complete-todo">
                     <input id="todo-complete-index" type="text">
                     <button id="complete-todo-button">Mark MyToDo Item as Completed</button>
                 </section>
+                
                 <button id="clear-todos-button">Remove All MyToDo Items</button>
             </form>
-    
         </section>
+
         <section id="completed-container">
             <form id="completed-form">
                 <section id="remove-completed">
                     <input id="completed-removal-index" type="text">
                     <button id="remove-completed-button">Remove Completed MyToDo Item</button>
                 </section>
+
                 <section id="mark-uncomplete">
                     <input id="mark-uncomplete-index" type="text">
                     <button id="mark-uncomplete-button">Mark as Uncompleted MyToDo Item</button>
                 </section>
+
                 <button id="clear-completed-button">Remove All Completed MyToDo Item</button>
             </form>
-        
         </section>
-        <section id="lists">
 
+        <section id="lists">
             <ol id="todos-list">
-                
             </ol>
+
             <ol id="completed-list">
-                
             </ol>
         </section>
+
     </section>
 </body>
+
 </html>
