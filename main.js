@@ -128,7 +128,7 @@ function markUncomplete(event) {
     // Grab value that's in user's todo completion index input box.
     let markUnc = document.querySelector('#mark-uncomplete-index').value;
     // Move todo at that index to the completed list.
-
+    todos = todos.concat(completed.splice(markUnc, 1));
     // Update our html.
     updateTodosOl();
     updateCompletedOl();
