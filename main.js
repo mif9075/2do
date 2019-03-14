@@ -141,7 +141,7 @@ function clearComplete(event) {
     event.preventDefault();
 
     // Clear all todos from the list.
-    
+    completed = [];
     // Update our html.
     updateTodosOl();
     updateCompletedOl();
