@@ -7,7 +7,7 @@
 // An array for our todos.
 const todos = [];
 // An array for our completed todos.
-const completed = [];
+let completed = [];
 
 // Tell the browser to run init when the html is loaded.
 window.onload = init;
@@ -16,22 +16,22 @@ function init() {
     // Add event listener functions that get called whenever a user interacts
     // with the respective element.
 
-    document.querySelector('#add-todo')
+    document.querySelector('#add-todo-button')
         .addEventListener('click', addTodo);
     
-    document.querySelector('#remove-todo')
+    document.querySelector('#remove-todo-button')
         .addEventListener('click', removeTodo);
 
-    document.querySelector('#complete-todo')
+    document.querySelector('#complete-todo-button')
         .addEventListener('click', completeTodo);
 
     document.querySelector('#clear-todos-button')
         .addEventListener('click', clearTodos);
 
-    document.querySelector('#remove-completed')
+    document.querySelector('remove-completed-button')
         .addEventListener('click', removeCompleted);
 
-    document.querySelector('#mark-uncomplete')
+    document.querySelector('#mark-uncomplete-button')
         .addEventListener('click', markUncomplete);
 
     document.querySelector('#clear-completed-button')
@@ -68,7 +68,7 @@ function removeTodo(event) {
     // Grab value that's in user's removal index input box.
     let remove = document.querySelector('#todo-removal-index').value;
     // Remove todo at that index.
-
+        todos.splice(remove , 1);
     // Update our html.
     updateTodosOl();
     // Reset all input fields.
@@ -82,7 +82,8 @@ function completeTodo(event) {
     // Grab value that's in user's todo completion index input box.
     let compTodo = document.querySelector('#todo-complete-index').value;
     // Move todo at that index to the completed list.
-
+    let todo = todos.splice(compTodo, 1);
+    completed = completed + todo;
     // Update our html.
     updateTodosOl();
     // Reset all input fields.
