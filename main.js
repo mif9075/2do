@@ -70,12 +70,10 @@ function removeTodo(event) {
     let remove = document.querySelector('#todo-removal-index').value;
     let index = remove - 1;
     // Remove todo at that index.
-    if(isNaN(remove)  || remove === '' || remove !== 0){
+    if(isNaN(remove)  || remove === '' || remove < 1){
         resetAllInputs();
     }
-
     else {
-
     todos.splice(index, 1);
     }
                   
@@ -92,8 +90,14 @@ function completeTodo(event) {
 
     // Grab value that's in user's todo completion index input box.
     let compTodo = document.querySelector('#todo-complete-index').value;
+    let index = compTodo - 1;
     // Move todo at that index to the completed list.
-    completed = completed.concat(todos.splice(compTodo, 1));
+    if(isNaN(compTodo)  || compTodo === '' || compTodo < 1){
+        resetAllInputs();
+    }
+    else {
+    completed = completed.concat(todos.splice(index, 1));
+    }
     // console.log(todos);
     // console.log(completed);
 
@@ -102,6 +106,8 @@ function completeTodo(event) {
     updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
+    console.log(todos);
+    console.log(completed);
 }
 
 function clearTodos(event) {
