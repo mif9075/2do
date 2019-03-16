@@ -70,9 +70,15 @@ function removeTodo(event) {
     let remove = document.querySelector('#todo-removal-index').value;
     let index = remove - 1;
     // Remove todo at that index.
-    // for (let i >= 1; i <todos.length; i++){
+    if(isNaN(remove)  || remove === '' || remove !== 0){
+        resetAllInputs();
+    }
+
+    else {
+
     todos.splice(index, 1);
-    // }               
+    }
+                  
     // Update our html.
     updateTodosOl();
     // Reset all input fields.
