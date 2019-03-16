@@ -98,8 +98,6 @@ function completeTodo(event) {
     else {
     completed = completed.concat(todos.splice(index, 1));
     }
-    // console.log(todos);
-    // console.log(completed);
 
     // Update our html.
     updateTodosOl();
@@ -148,13 +146,21 @@ function markUncomplete(event) {
 
     // Grab value that's in user's todo completion index input box.
     let markUnc = document.querySelector('#mark-uncomplete-index').value;
+    let index = markUnc - 1;
     // Move todo at that index to the completed list.
-    todos = todos.concat(completed.splice(markUnc, 1));
+    if(isNaN(markUnc)  || markUnc === '' || markUnc < 1){
+        resetAllInputs();
+    }
+    else {
+    todos = todos.concat(completed.splice(index, 1));
+    }
     // Update our html.
     updateTodosOl();
     updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
+    console.log(completed);
+    console.log(todos);
 }
 
 function clearComplete(event) {
