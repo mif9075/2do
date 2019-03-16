@@ -127,12 +127,19 @@ function removeCompleted(event) {
 
     // Grab value that's in user's removal index input box.
     let removeComp = document.querySelector('#completed-removal-index').value;
+    let index = removeComp - 1;
     // Remove todo at that index.
-    completed.splice(removeComp, 1);
+    if(isNaN(removeComp)  || removeComp === '' || removeComp < 1){
+        resetAllInputs();
+    }
+    else {
+    completed.splice(index, 1);
+    }
     // Update our html.
     updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
+    console.log(completed);
 }
 
 function markUncomplete(event) {
