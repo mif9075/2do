@@ -1,4 +1,10 @@
 #lists {
     display: flex;
-    flex-direction: row;
+
 }
+#list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;  
+}
+
