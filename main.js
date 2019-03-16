@@ -38,13 +38,11 @@ function init() {
         .addEventListener('click', clearComplete);
 }
 
-
 /*
 # ========================================================
 # = List Management
 # ========================================================
 */
-
 
 function addTodo(event) {
     // Make sure page doesn't reload on button press.
@@ -171,6 +169,7 @@ function clearComplete(event) {
     completed = [];
     // Update our html.
     updateCompletedOl();
+    console.log(complete);
 }
 
 
@@ -179,7 +178,6 @@ function clearComplete(event) {
 # = HTML Management
 # ========================================================
 */
-
 
 // Use this function to reset all input fields.
 function resetAllInputs() {
