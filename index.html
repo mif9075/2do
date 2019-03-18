@@ -13,14 +13,14 @@
 
 <body>
 
-        <header>
-                <h2>MyToDo List</h2>
-                <h3>Enter MyToDo Items on the Left, and when completed move them to the Right.</h3>
-            </header>
+    <header>
+        <h2>MyToDo List</h2>
+        <h3>Enter MyToDo Items on the Left, and when completed move them to the Right.</h3>
+    </header>
 
     <section id="container">
 
-        <section id="todo-container">
+        <section id="todo-container" id="container-main">
             <form id="todos-form">
                 <section id="add-todo">
                     <input id="new-todo" type="text">
@@ -48,9 +48,11 @@
 
         </section>
 
-    
 
-        <section id="completed-container">
+
+
+
+        <section id="completed-container" id="container-main">
             <form id="completed-form">
                 <br>
                 <br>
@@ -67,7 +69,6 @@
                 <button id="clear-completed-button">Remove All Completed MyToDo Item</button>
             </form>
 
-            
             <section id="list">
                 <h3>"MyToDo List: Completed"</h3>
                 <ol id="completed-list">

@@ -57,7 +57,7 @@ function addTodo(event) {
     updateTodosOl();
     // Reset all input fields.
     resetAllInputs();
-    console.log(todos);
+    // console.log(todos);
 }
 
 function removeTodo(event) {
@@ -79,7 +79,7 @@ function removeTodo(event) {
     updateTodosOl();
     // Reset all input fields.
     resetAllInputs();
-    console.log(todos);
+    // console.log(todos);
 }
 
 function completeTodo(event) {
@@ -102,8 +102,8 @@ function completeTodo(event) {
     updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
-    console.log(todos);
-    console.log(completed);
+    // console.log(todos);
+    // console.log(completed);
 }
 
 function clearTodos(event) {
@@ -114,7 +114,7 @@ function clearTodos(event) {
     todos = [];
     // Update our html.
     updateTodosOl();
-    console.log(todos);
+    // console.log(todos);
 }
 
 function removeCompleted(event) {
@@ -135,7 +135,7 @@ function removeCompleted(event) {
     updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
-    console.log(completed);
+    // console.log(completed);
 }
 
 function markUncomplete(event) {
@@ -157,8 +157,8 @@ function markUncomplete(event) {
     updateCompletedOl();
     // Reset all input fields.
     resetAllInputs();
-    console.log(completed);
-    console.log(todos);
+    // console.log(completed);
+    // console.log(todos);
 }
 
 function clearComplete(event) {
@@ -169,7 +169,7 @@ function clearComplete(event) {
     completed = [];
     // Update our html.
     updateCompletedOl();
-    console.log(complete);
+    // console.log(complete);
 }
 
 
