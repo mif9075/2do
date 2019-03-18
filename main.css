@@ -1,10 +1,6 @@
-#lists {
+#container {
     display: flex;
-
-}
-#list {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-right: 5px;  
 }
 

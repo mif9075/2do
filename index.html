@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <header>
+            var d = new Date("03/25/2015");
+    </header>
 
     <section id="container">
 
@@ -34,7 +37,17 @@
                 
                 <button id="clear-todos-button">Remove All MyToDo Items</button>
             </form>
+
+            <section id="list">
+                <h3>"MyToDo List"</h3>
+                <ol id="todos-list">
+                </ol>
+            </section>
+
         </section>
+
+        
+        
 
         <section id="completed-container">
             <form id="completed-form">
@@ -50,24 +63,16 @@
 
                 <button id="clear-completed-button">Remove All Completed MyToDo Item</button>
             </form>
+
+            <section id="list">
+                <h3>"MyToDo List: Completed"</h3>
+                <ol id="completed-list">
+                </ol>
+            </section>
+
         </section>
 
-            
-        <section id ="lists">
-            <section id="list">
-            <h3>"MyToDo List"</h3>
-            <ol id="todos-list">
-            </ol>
-            
-            </section>
-            
-            <section id="list">
-            <h3>"MyToDo List: Completed"</h3>
-            <ol id="completed-list">
-            </ol>
-            
-            </section>
-        </section>
+        
 
     </section>
 </body>
