@@ -12,9 +12,11 @@
 </head>
 
 <body>
-    <header>
-            var d = new Date("03/25/2015");
-    </header>
+
+        <header>
+                <h2>MyToDo List</h2>
+                <h3>Enter MyToDo Items on the Left, and when completed move them to the Right.</h3>
+            </header>
 
     <section id="container">
 
@@ -22,9 +24,9 @@
             <form id="todos-form">
                 <section id="add-todo">
                     <input id="new-todo" type="text">
-                    <button id="add-todo-button">Add to MyToDo List</button>
+                    <button id="add-todo-button">Add MyToDo Item</button>
                 </section>
-
+                <br>
                 <section id="remove-todo">
                     <input id="todo-removal-index" type="number">
                     <button id="remove-todo-button">Remove from MyToDo List</button>
@@ -32,9 +34,9 @@
 
                 <section id="complete-todo">
                     <input id="todo-complete-index" type="number">
-                    <button id="complete-todo-button">Mark MyToDo Item as Completed</button>
+                    <button id="complete-todo-button">Send MyToDo Item to Completed</button>
                 </section>
-                
+                <br>
                 <button id="clear-todos-button">Remove All MyToDo Items</button>
             </form>
 
@@ -46,11 +48,12 @@
 
         </section>
 
-        
-        
+    
 
         <section id="completed-container">
             <form id="completed-form">
+                <br>
+                <br>
                 <section id="remove-completed">
                     <input id="completed-removal-index" type="number">
                     <button id="remove-completed-button">Remove Completed MyToDo Item</button>
@@ -60,10 +63,11 @@
                     <input id="mark-uncomplete-index" type="number">
                     <button id="mark-uncomplete-button">Mark as Uncompleted MyToDo Item</button>
                 </section>
-
+                <br>
                 <button id="clear-completed-button">Remove All Completed MyToDo Item</button>
             </form>
 
+            
             <section id="list">
                 <h3>"MyToDo List: Completed"</h3>
                 <ol id="completed-list">
